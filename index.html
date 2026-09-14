@@ -1,42 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - English Story in Level</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Speaky AI">
+  <title>Speaky AI Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f8f7fc;
+      --surface: #ffffff;
+      --ink: #24212d;
+      --soft: #676273;
+      --accent: #7656f6;
+      --border: #e8e4f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: 40px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 14px 40px rgba(45, 34, 83, 0.07);
+    }
+
+    h1, h2 { line-height: 1.25; }
+    h1 { margin: 0 0 8px; font-size: 34px; }
+    h2 { margin: 32px 0 8px; font-size: 21px; }
+    p, ul { margin: 8px 0; }
+    li + li { margin-top: 8px; }
+    .meta { color: var(--soft); }
+    a { color: var(--accent); }
+
+    @media (max-width: 600px) {
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 28px 20px 40px;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      h1 { font-size: 29px; }
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Privacy Policy</h1>
+  <main>
+    <h1>Speaky AI Privacy Policy</h1>
+    <p class="meta"><strong>Effective date:</strong> September 14, 2026</p>
     <p>
-        Welcome to our application! We are committed to respecting and protecting your privacy. This privacy policy explains that the application does not collect any of your personal information, except as detailed below.
+      Speaky AI ("Speaky", "we", "us") provides English-learning and
+      speaking-practice features. This policy explains what data the app
+      collects, how it is collected and used, which service providers receive
+      it, how long it is retained, and how users can control or delete it.
+    </p>
+    <p>Contact: <a href="mailto:conbo104@gmail.com">conbo104@gmail.com</a></p>
+
+    <h2>Data we collect and how</h2>
+    <ul>
+      <li><strong>Account data:</strong> an anonymous account identifier by default, or the name and email address supplied when the user chooses Apple or Google sign-in. This is collected through Firebase Authentication.</li>
+      <li><strong>Learning data:</strong> selected goals, English level, interests, lesson progress, streaks, answers, typed practice messages, conversation transcripts, and generated feedback. This is collected from user choices and use of learning features.</li>
+      <li><strong>Audio:</strong> short voice recordings created only when the user presses and holds a microphone control. The recording is uploaded for speech recognition after the user explicitly permits third-party AI processing. The temporary file is deleted from the device after upload.</li>
+      <li><strong>Purchase data:</strong> product identifier, entitlement status, renewal status, and expiry information received from Apple and RevenueCat. Speaky does not receive full payment-card information.</li>
+      <li><strong>Notification data:</strong> a device messaging token and reminder preference when the user enables reminders.</li>
+      <li><strong>Usage and diagnostics:</strong> basic events such as onboarding progress, paywall actions, and review-prompt outcomes, plus technical diagnostics made available by Firebase and the operating system.</li>
+    </ul>
+
+    <h2>How we use data</h2>
+    <p>
+      We use this information to authenticate accounts, provide and personalize
+      lessons, transcribe speech, generate AI conversation and feedback,
+      estimate an English level, save learning history and progress, restore
+      purchases, deliver requested reminders, prevent abuse, operate and secure
+      the service, and understand app reliability and funnel performance.
+    </p>
+    <p>We do not sell personal data or use practice content for third-party advertising.</p>
+
+    <h2>Third-party AI disclosure and permission</h2>
+    <p>
+      Third-party AI processing is disabled until the user explicitly chooses
+      <strong>Allow AI processing</strong> in the app. Before consent, the app
+      identifies the data, recipient, and purpose. Users can decline and
+      continue using browsing and non-AI learning content.
+    </p>
+    <ul>
+      <li><strong>OpenAI:</strong> receives voice recordings for speech-to-text and receives transcripts, typed practice messages, recent conversation context, lesson context, and English level to provide placement, conversation replies, checkpoint scoring, and feedback. Speaky does not include the user's name, email address, or account identifier in prompts sent to OpenAI.</li>
+      <li><strong>Google Translate:</strong> receives only the specific text a user asks to translate. Nothing is sent to Google Translate until the user requests a translation.</li>
+    </ul>
+    <p>
+      Users should avoid including sensitive personal information in practice
+      recordings or messages. Permission can be withdrawn at any time from
+      <strong>Settings → Privacy &amp; AI data</strong>. Withdrawal stops future
+      third-party AI requests; it does not delete data already stored with the
+      Speaky account. Users can request deletion as described below.
     </p>
 
-    <h2>Location Services</h2>
+    <h2>Other service providers</h2>
+    <ul>
+      <li><strong>Google Firebase</strong> provides authentication, analytics, and push-notification delivery.</li>
+      <li><strong>Google Cloud Run</strong> hosts the Speaky API.</li>
+      <li><strong>Supabase</strong> provides the database used to store account and learning data.</li>
+      <li><strong>RevenueCat and Apple</strong> process purchase and subscription status. A Speaky account identifier is used to associate an entitlement with the correct account.</li>
+    </ul>
     <p>
-        To provide weather updates relevant to your current location, our app may require access to your device's location services. This data is only used to fetch and display weather information and is not stored or used for any other purposes. Location tracking may occur in the background even when the app is not in use, to ensure timely weather updates.
+      These providers process data to deliver services to Speaky under their
+      applicable data-protection and security terms. We require service
+      providers handling user data on our behalf to use it only for the
+      contracted purpose and to provide protection equal to or stronger than
+      the protections described here.
     </p>
 
-    <h2>Google AdMob Advertising</h2>
+    <h2>Retention, deletion, and withdrawal</h2>
     <p>
-        The app uses Google AdMob to display advertisements. When you use this application, you may see advertisements provided by Google AdMob within the app. Google AdMob may use non-personal tracking technologies, such as ad providers and third parties, to deliver ads that match the interests and behavior of users. This information is not personally identifiable and is not linked to your personal information.
+      Learning preferences, transcripts, session history, feedback, and
+      progress are retained while the account is active so the app can show
+      history and personalize the learning path. Temporary audio files are
+      deleted from the device after upload and are not stored in the Speaky
+      session history. Purchase records may be retained as required for
+      financial, fraud-prevention, and legal obligations. Service providers may
+      retain limited records under their security, abuse-monitoring, and legal
+      obligations.
+    </p>
+    <p>
+      Users can withdraw future AI processing permission in
+      <strong>Settings → Privacy &amp; AI data</strong>. To request deletion of
+      the account and stored personal data, use
+      <strong>Account → Help &amp; feedback</strong> or email
+      <a href="mailto:conbo104@gmail.com">conbo104@gmail.com</a> from the
+      address associated with the account. We may retain only information
+      required by law, security, or transaction-record obligations.
     </p>
 
-    <h2>Information Security</h2>
+    <h2>Security and international processing</h2>
     <p>
-        We are committed to protecting your non-personal information through the use of modern security measures and implementing industry standards to prevent unauthorized access, misuse, or disclosure of your information.
+      We use authenticated connections and encrypted HTTPS transport. Access to
+      account data is restricted by account ownership. Service providers may
+      process data in countries different from the user's country and apply
+      their contractual and legal transfer safeguards.
     </p>
 
-    <h2>External Links</h2>
+    <h2>Children</h2>
     <p>
-        The app may contain links to external websites or third-party services. We are not responsible for the content or privacy policies of these websites. Please check their privacy policies before using them.
+      Speaky AI is not directed to children under 13. A parent or guardian
+      should contact us if they believe a child has provided personal data
+      without appropriate permission.
     </p>
 
-    <h2>Compliance with Laws</h2>
+    <h2>Changes</h2>
     <p>
-        We comply with privacy and data security laws applicable in the regions where we operate.
+      If the categories of practice data, AI recipients, or purposes materially
+      change, the app will present a new disclosure and request permission again
+      before sending data under the changed terms. The effective date above
+      will also be updated.
     </p>
+  </main>
 </body>
-
 </html>
